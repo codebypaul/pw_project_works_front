@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 export default function Footer() {
     return (
-        <footer>
+        <FooterWrapper>
             <Link to='/about'>
                 About
             </Link>
-        </footer>
+        </FooterWrapper>
     )
 } 
+
+const FooterWrapper = styled.footer`
+    background: black;
+`
