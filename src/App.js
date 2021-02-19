@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 // pages
 import About from './pages/About'
 import Contact from './pages/Contact'
+import FAQ from './pages/FAQ'
 import Home from './pages/Home'
 import Pricing from './pages/Pricing'
 import Reviews from './pages/Reviews'
@@ -19,6 +20,7 @@ function App() {
         <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>
         <Route path='/contact_us' component={Contact}/>
+        <Route path='/FAQ' component={FAQ}/>
         <Route path='/pricing' component={Pricing}/>
         <Route path='/reviews' component={Reviews}/>
         <Route path='/services' component={Services}/>
