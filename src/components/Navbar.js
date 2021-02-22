@@ -17,6 +17,7 @@ export default function NavBar(){
         <NavDropdown.Item href="/build_your_own">Business Solution Software</NavDropdown.Item>
       </NavDropdown>
       <Nav.Link href="/pricing">Pricing</Nav.Link>
+      <Nav.Link href="/blog">Blog</Nav.Link>
       <Nav.Link href="/contact_us">Contact Us</Nav.Link>
     </Nav>
     <Form inline>
