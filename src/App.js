@@ -13,6 +13,8 @@ import Services from './pages/Services'
 // components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import NewsLetterForm from './components/NewsLetterForm'
+
 function App() {
   return (
     <>
@@ -27,6 +29,7 @@ function App() {
         <Route path='/reviews' component={Reviews}/>
         <Route path='/services' component={Services}/>
       </Switch>
+      <NewsLetterForm/>
       <Footer/>
     </>
   );

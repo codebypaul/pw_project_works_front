@@ -1,7 +1,7 @@
 export default function BlogPost(props) {
     return (
         <div className="mb-5">
-            <h1>{props.title}</h1>
+            <h3>{props.title}</h3>
             <p>{props.body}</p>
             <p>{props.date}</p>
             <hr/>
