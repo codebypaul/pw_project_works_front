@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Switch, Route } from 'react-router-dom'
+
 // pages
 import About from './pages/About'
 import Blog from './pages/Blog'
@@ -10,6 +11,7 @@ import Home from './pages/Home'
 import Pricing from './pages/Pricing'
 import Reviews from './pages/Reviews'
 import Services from './pages/Services'
+
 // components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'

@@ -17,12 +17,26 @@ export default function Services() {
             </ServiceContainer>
             <ServiceContainer>
                 <h2 id="Mobile_Application">Mobile Application</h2>
-                <p>{lorem}</p>
+                <p>Do you already have a working system, but you want to reduce cost and make it easier for your teammates to use. Let us develop an application, launched on the app and google play stores for your team to have and use.</p>
+                <ul>
+                  <li>
+                    Clock in
+                  </li>
+                  <li>
+                    Communicate important messages
+                  </li>
+                  <li>
+                    Alert your team to new changes
+                  </li>
+                  <li>
+                    Talk directly to members on record
+                  </li>
+                </ul>
                 <hr/>
             </ServiceContainer>
             <ServiceContainer>
                 <h2 id="SEO_Strategies">SEO Strategies</h2>
-                <p>{lorem}</p>
+                <p>An SEO strategy (also referred to as “SEO approach” or “search engine optimization strategy”) is the process of planning, outlining and implementing steps designed to improve search engine rankings. In other words: an SEO strategy is the process that you follow when you want to get more organic traffic</p>
                 <hr/>
             </ServiceContainer>
             <ServiceContainer>
@@ -34,8 +48,7 @@ export default function Services() {
                 <h2 id="Web Applications">
                     Web Applications
                 </h2>
-                <p>There are a million applications out there, but is there one for your organization?</p>
-                <p>{lorem}</p>
+                <p></p>
                 <hr/>
             </ServiceContainer>
             

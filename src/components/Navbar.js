@@ -1,9 +1,11 @@
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
-
+import logo from '../images/logo.png'
 export default function NavBar(){
     return (
-        <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="/">PW Project Works</Navbar.Brand>
+        <Navbar bg="secondary" expand="lg">
+  <Navbar.Brand href="/">
+  <img src={logo} alt="" className='nav-logo'/>
+  PW Project Works</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">
