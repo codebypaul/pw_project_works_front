@@ -33,6 +33,9 @@ export default function Pricing() {
             <PricingArea>
                 <div className='price-card basic'>
                     <h3>Basic</h3>
+                    <div className="card-text">
+
+                    </div>
                     <button className='package-btn btn'>Continue</button>
                 </div>
                 <div className='price-card advanced'>
@@ -58,37 +61,48 @@ const PricingArea = styled.div`
     justify-content: center;
     align-items: center;
     padding: 5rem 0;
-    height: 75vh;
+    height: 90vh;
     width: 100%;
+    background: linear-gradient(to bottom, rgba(200,200,200,1), rgba(100,100,100,1));
     .price-card {
-        width: 25%;
+        width: 30%;
         height: 75%;
         border-radius: .5rem;
         text-align: center;
         transition: transform .3s;
+        position: relative;
+        .card-text {
+            height: 75%;
+            width: 100%
+        }
     }
     .package-btn {
-        bottom: 0;
+        position: absolute;
         transition: transform .5s;
         border-radius: 1.5rem;;
         background: white;
-        padding: .5rem 2rem;
+        padding: .5rem 3rem;
+        margin: 0 auto;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .price-card:hover {
         transform: scale(1.25);
+        z-index: 1;
         .package-btn {
-            position: relative;
-            bottom: 0;
-            transform: scale(1.25);
+            bottom: -2rem;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.25);
         }
     }
     .basic{
-        background: blue;
+        background: linear-gradient(45deg, var(--mainRed),var(--lightRed));
     }
     .advanced{
-        background: red;
+        background: linear-gradient(45deg, var(--mainBlue),var(--lightBlue));
     }
     .custom{
-        background: green;
+        background: linear-gradient(45deg, var(--mainGreen),var(--lightGreen));
     }
 `

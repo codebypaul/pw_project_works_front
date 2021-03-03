@@ -1,4 +1,10 @@
 :root {
+  --mainBlue: rgba(15, 50, 200, 1);
+  --lightBlue: rgba(129, 152, 255, 1);
+  --mainRed: rgba(255, 0, 0, 1);
+  --lightRed: rgb(250, 129, 129);
+  --mainGreen: rgba(0, 192, 0);
+  --lightGreen: rgb(174, 223, 174);
 }
 
 * {
@@ -13,6 +19,58 @@ ul {
   margin: 0;
 }
 
+.home-contact {
+  background: rgba(255, 255, 255, 0.7);
+}
+/*----- navbar ------*/
+.navbar {
+  background: rgba(255, 255, 255, 0.2);
+  transition: width 1s linear 0.25s;
+}
+.navbar.active {
+  background: var(--lightBlue);
+  animation: navColor 10s linear infinite alternate;
+}
 .nav-logo {
-  width: 4rem;
+  width: 3rem;
+}
+
+.intro-container {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.articles {
+  background: black;
+  color: transparent;
+  transition: 1s linear;
+}
+
+.articles.active {
+  background: rgba(50, 50, 200, 0.99);
+  color: white;
+}
+/*-------end of navbar-------*/
+
+@keyframes navColor {
+  from {
+    background-color: var(--lightBlue);
+    /* linear-gradient(
+      to right,
+      var(--lightBlue),
+      var(--mainBlue)
+    ); */
+  }
+
+  to {
+    background-color: var(--mainBlue);
+    /* linear-gradient(
+      to right,
+      var(--mainBlue),
+      var(--lightBlue)
+    ); */
+  }
 }
